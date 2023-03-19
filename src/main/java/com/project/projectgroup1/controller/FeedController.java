@@ -45,6 +45,12 @@ public class FeedController {
 
     }
 
+    @GetMapping("/detail.do")
+    public String detail() {
+        System.out.println(feedService.detail(1));
+        return "/";
+    }
+
     @PostMapping("/upload.do")
     public String upload(Model model){
         return "/upload";

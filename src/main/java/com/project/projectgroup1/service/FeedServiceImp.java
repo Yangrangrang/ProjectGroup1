@@ -13,6 +13,8 @@ public class FeedServiceImp implements FeedService{
     @Autowired
     private FeedMapper feedMapper;
 
+
+
     @Override
     public List<FeedDto> list() {
         return feedMapper.findAll();
